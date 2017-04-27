@@ -1,0 +1,53 @@
+.important-news 
+	width: (950/2)px
+	.news-list
+		display: flex
+		.image-wrap, img
+			width: (366/2)px
+			height: (214/2)px
+		.image-wrap
+			position: relative
+			span
+				display: flex
+				justify-content: center
+				position: absolute
+				z-index: 1000
+				top: 5px
+				left: 5px
+				width: (97/2)px
+				line-height: 16px
+				text-align: center
+				font-size: 10px
+				font-weight: 100
+				color: #fff
+				&:before
+					content: ''
+					position: absolute
+					z-index: -9999
+					width: (97/2)px
+					height: 16px
+					border-radius: 10px
+					background-color: black
+					opacity: 0.4
+					
+	.news-content
+		display: flex
+		flex-direction: column
+		justify-content: space-between
+		margin-bottom: 42px
+		padding-left: 14px
+		h2
+			font-size: (30/2)px
+			line-height: 20px
+		p.text
+			max-height: 40px
+			overflow: hidden
+			font-size: 10px
+			line-height: (26/2)px
+		p.report-info
+			font-size: 10px
+			.category
+				margin-left: 10px
+				&:before
+					color: darkgray
+
